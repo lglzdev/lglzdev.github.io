@@ -1,5 +1,5 @@
 const tT = document.querySelector('.time b'), wD = document.querySelector('.word'), hT = document.querySelector('.hint span'), aC = document.querySelector('[data-alert-container]'), gG = document.querySelector('[data-guess-grid]'), kB = document.querySelector('[data-keyboard]'), FAD = 500;
-let cW = {}, sc = 0, wC = 0, tL = 60, mW = 4, lSpcs, rW, cRs, aWs = [], slts, sSqrs = [], gSqr, wSqr;
+let cW = {}, sc = 0, wC = 0, tL = 60, mW = 410, lSpcs, rW, cRs, aWs = [], slts, sSqrs = [], gSqr, wSqr;
 
 function gNWD() {
     if (aWs.length == 0 || wC >= mW) {
@@ -223,7 +223,7 @@ function suG() {
 
     sc++
 
-    if (sc == 4) {
+    if (sc == 410) {
         clearTimeout(t);
         sFM();
         stpInt();
@@ -236,10 +236,6 @@ function suG() {
         stpInt();
         return;
     }
-
-    // ESTO DEL CONSOLE SE ELIMINARA
-    // console.log(slts);
-    // console.log(sc);
 
     tL += 8;
     stpInt();
